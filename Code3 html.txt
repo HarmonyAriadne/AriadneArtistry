@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AriadneArtistry</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background-color: #f4f4f4;
+
+        }
+
+        header {
+
+            background-color: #333;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 1em 0;
+
+        }
+
+        nav ul {
+
+            list-style-type: none;
+
+            padding: 0;
+
+            text-align: center;
+
+            background-color: #444;
+
+            margin: 0;
+
+        }
+
+        nav ul li {
+
+            display: inline;
+
+            margin: 0 20px;
+
+        }
+
+        nav ul li a {
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            padding: 10px;
+
+        }
+
+        nav ul li a:hover {
+
+            background-color: #555;
+
+            border-radius: 5px;
+
+        }
+
+        section {
+
+            padding: 20px;
+
+            display: none;
+
+        }
+
+        #home, #mural, #portfolio, #contact {
+
+            display: none;
+
+        }
+
+        footer {
+
+            background-color: #333;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 1em 0;
+
+            position: fixed;
+
+            width: 100%;
+
+            bottom: 0;
+
+        }
+
+        footer a {
+
+            color: white;
+
+            text-decoration: none;
+
+        }
+
+        .gallery img {
+
+            width: 300px;
+
+            height: auto;
+
+            margin: 15px;
+
+            border: 2px solid #ccc;
+
+            border-radius: 5px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- Header Section -->
+
+    <header>
+
+        <h1>AriadneArtistry</h1>
+
+    </header>
+
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+
+            <li><a href="#mural" onclick="showSection('mural')">Murals</a></li>
+
+            <li><a href="#portfolio" onclick="showSection('portfolio')">Portfolio</a></li>
+
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Home Section -->
+
+    <section id="home">
+
+        <h2>Welcome To My Page</h2>
+
+        <p>All your creative endeavours star here!</p>
+
+        <p>If you're interested in commissioning a piece of artwork, feel free to contact me for inquiries and prices. My work ranges from murals to personalized artwork pieces, and I am always open to new creative challenges.</p>
+
+        <p><strong>Email:</strong> ariadne@example.com</p>
+
+    </section>
+
+
+
+    <!-- Murals Section -->
+
+    <section id="mural">
+
+        <h2>Murals</h2>
+
+        <p>Explore some of my mural work that has adorned various spaces.</p>
+
+        <div class="gallery">
+
+            <img src="mural1.jpg" alt="Mural 1">
+
+            <img src="mural2.jpg" alt="Mural 2">
+
+            <img src="mural3.jpg" alt="Mural 3">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Portfolio Section -->
+
+    <section id="portfolio">
+
+        <h2>Portfolio</h2>
+
+        <p>Check out a selection of my recent art pieces.</p>
+
+        <div class="gallery">
+
+            <img src="artwork1.jpg" alt="Artwork 1">
+
+            <img src="artwork2.jpg" alt="Artwork 2">
+
+            <img src="artwork3.jpg" alt="Artwork 3">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>If you're interested in my work or want to inquire about commissions, feel free to reach out.</p>
+
+        <p><strong>Email:</strong> <a href="mailto:ariadne@example.com">ariadne@example.com</a></p>
+
+        <p><strong>Phone:</strong> (555) 123-4567</p>
+
+        <p>Follow me on social media for updates on my latest projects!</p>
+
+    </section>
+
+
+
+    <!-- Footer Section -->
+
+    <footer>
+
+        <p>&copy; 2024 AriadneArtistry | <a href="mailto:ariadne@example.com">ariadne@example.com</a></p>
+
+    </footer>
+
+
+
+    <script>
+
+        // JavaScript to toggle sections
+
+        function showSection(sectionId) {
+
+            // Hide all sections
+
+            document.querySelectorAll('section').forEach(section => section.style.display = 'none');
+
+            
+
+            // Show the selected section
+
+            document.getElementById(sectionId).style.display = 'block';
+
+        }
+
+
+
+        // Show home section by default
+
+        document.getElementById('home').style.display = 'block';
+
+    </script>
+
+
+
+</body>
+
+</html>
